@@ -6,17 +6,6 @@ const userSchema=new mongoose.Schema({
         required:true,
         unique:true
     },
-    username:{
-        type:String,
-        required:true,
-        unique:true
-    },
-    password:{
-        type:String,
-        required:true,
-        min:8,
-        max:22
-    },
     userjoined:{
         type:Date,
         default:Date.now()
@@ -24,10 +13,6 @@ const userSchema=new mongoose.Schema({
     name:{
         type:String,
         required:true,
-    },
-    token:{
-        type:String,
-        required:true
     },
     photo:{
         type:String
@@ -49,11 +34,6 @@ const userSchema=new mongoose.Schema({
     },
     Address:{
         type:Array
-    },
-    otp:{
-        type:Number,
-        min:6,
-        max:6
     }
 })
 
