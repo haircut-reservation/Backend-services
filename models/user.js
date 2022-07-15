@@ -51,9 +51,10 @@ const userSchema=new mongoose.Schema({
         type:Array
     },
     otp:{
-        type:Number
+        type:Number,
+        min:6,
+        max:6
     }
-
 })
 
 const userModel=new mongoose.model('users',userSchema)
