@@ -46,13 +46,21 @@ const saloonSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    saloonType:{
-        type:Number,
+    saloonType: {
+        type: Number,
         //0-> Male
         //1->Unisex
         //2->female
+    },
+    saloonid: {
+        type: String,
+        required: true
+    },
+    thumbnail:{
+        type:String,
+        required:true
     }
 })
 
 const saloonModel = new mongoose.model('saloon', saloonSchema)
-module.export=saloonModel
+module.export = saloonModel
